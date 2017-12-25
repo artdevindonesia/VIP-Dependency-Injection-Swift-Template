@@ -16,7 +16,7 @@ class ___VARIABLE_productName:identifier___Assembly: Assembly {
 	func assemble(container: Container) {
 		container.register(___VARIABLE_productName:identifier___ViewController.self) { (r, parameters: ___VARIABLE_productName:identifier___Model.Request) in
 			let view = ___VARIABLE_productName:identifier___ViewController()
-			let interactor = r.resolve(I___VARIABLE_productName:identifier___Interactor.self, argument: view as I___VARIABLE_productName:identifier___ViewController())!
+			let interactor = r.resolve(I___VARIABLE_productName:identifier___Interactor.self, argument: view as I___VARIABLE_productName:identifier___ViewController)!
 			let router = r.resolve(I___VARIABLE_productName:identifier___Router.self, argument: view)!
 			interactor.parameters = parameters
 			view.interactor = interactor
@@ -24,7 +24,7 @@ class ___VARIABLE_productName:identifier___Assembly: Assembly {
 			return view
 		}
 
-		container.register(I___VARIABLE_productName:identifier___Interactor.self) { (r, view: I___VARIABLE_productName:identifier___ViewController()) in			
+		container.register(I___VARIABLE_productName:identifier___Interactor.self) { (r, view: I___VARIABLE_productName:identifier___ViewController) in			
 			let presenter = r.resolve(I___VARIABLE_productName:identifier___Presenter.self, argument: view)!
 			let manager = r.resolve(I___VARIABLE_productName:identifier___Manager.self)!
 			let interactor = ___VARIABLE_productName:identifier___Interactor(presenter: presenter, manager: manager)
