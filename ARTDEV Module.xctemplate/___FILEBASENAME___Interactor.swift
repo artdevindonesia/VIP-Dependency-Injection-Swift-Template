@@ -11,14 +11,13 @@
 import UIKit
 
 protocol I___VARIABLE_productName:identifier___Interactor: class {
-	var parameters: ___VARIABLE_productName:identifier___Model.Request? { get set }
+	var parameters: [String: Any]? { get set }
 }
 
 class ___VARIABLE_productName:identifier___Interactor: I___VARIABLE_productName:identifier___Interactor {
-
-    var presenter: I___VARIABLE_productName:identifier___Presenter?
+    weak var presenter: I___VARIABLE_productName:identifier___Presenter?
     var manager: I___VARIABLE_productName:identifier___Manager?
-    var parameters: ___VARIABLE_productName:identifier___Model.Request?
+    var parameters: [String: Any]?
 
     init(presenter: I___VARIABLE_productName:identifier___Presenter, manager: I___VARIABLE_productName:identifier___Manager) {
     	self.presenter = presenter
