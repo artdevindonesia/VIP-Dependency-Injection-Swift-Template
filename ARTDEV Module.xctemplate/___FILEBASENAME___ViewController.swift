@@ -11,12 +11,11 @@
 import UIKit
 
 protocol I___VARIABLE_productName:identifier___ViewController: class {
-	
+	// do someting...
 }
 
 class ___VARIABLE_productName:identifier___ViewController: UIViewController {
-
-	var interactor: I___VARIABLE_productName:identifier___Interactor?
+	weak var interactor: I___VARIABLE_productName:identifier___Interactor?
 	var router: I___VARIABLE_productName:identifier___Router?
 
 	override func viewDidLoad() {
@@ -25,13 +24,13 @@ class ___VARIABLE_productName:identifier___ViewController: UIViewController {
 }
 
 extension ___VARIABLE_productName:identifier___ViewController: I___VARIABLE_productName:identifier___ViewController {
-	
+	// do someting...
 }
 
 extension ___VARIABLE_productName:identifier___ViewController {
-	
+	// do someting...
 }
 
 extension ___VARIABLE_productName:identifier___ViewController {
-	
+	// do someting...
 }
